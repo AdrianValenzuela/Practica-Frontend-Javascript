@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Nodepop</title>
+</head>
+<body>
+    <!-- loader -->
+    <section>
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <!-- error message -->
+    <section>
+        <div class="global-errors hidden"></div>
+    </section>
+
+    <!-- ads list -->
+    <section class="ads">
+        <h1 class="title">Ads List</h1>
+        <div class="container">
+        <div class="columns">
+            <div class="column is-two-thirds">
+                <main class="ads-list"></main>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- new ad button or login -->
+    <section>
+        <div class="new-ad">
+            <span class="new-ad-button is-hidden">
+                <a href="/new-ad.html" class="button is-primary">New ad</a>
+                <a class="button is-danger logoutButton">Logout</a>
+            </span>
+            <!-- <a href="/new-ad.html" class="button is-hidden is-primary new-ad-button">New ad</a> -->
+            <span class="is-hidden login-register-buttons">
+                <a href="/login.html" class="button is-primary">Login</a>
+                <a href="/register.html" class="button is-primary">Register</a>
+            </span>
+        </div>
+    </section>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Nodepop</title>
+</head>
+<body>
+    <div class="lds-ring hidden">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="global-errors hidden"></div>
+    <section class="register-form">
+        <h1 class="title">Registro</h1>
+        <form novalidate>
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input name="email" class="input" type="email" placeholder="e.g. yosoy@tupadre.com" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Contraseña</label>
+                <div class="control">
+                    <input name="password" class="input" type="password" required>
+                </div>
+            </div>
+
+            <div class="field">
+                <p class="control">
+                    <button class="register button is-success" disabled>
+                        Register
+                    </button>
+                    <button class="toLogin button is-info">
+                        To Login
+                    </button>
+                </p>
+            </div>
+        </form>
+    </section>
+
+    <script type="module" src="js/register.js"></script>
+</body>
+</html>
