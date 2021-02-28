@@ -12,13 +12,13 @@ function canBeUpdatedOrDeleted(permitted) {
     return buttons;
 }
 
-export const adDetailView = (ad) => {
+export const adDetailView = (ad, status) => {
     return `<h1 class="title">${ad.ad}</h1>
             <div class="ad-container">
                 <img class="ad-img" src="${ad.photo}">
                 <div class="ad">
                     <p>Price: ${ad.price}€</p>
-                    <p>Status: ${ad.status}</p>
+                    <p>Status: ${status[ad.status]}</p>
                     <p>Tags: ${ad.tags}</p>
                 </div>
             </div>

@@ -10,7 +10,13 @@ export default class BaseController {
             FINISH_LOADING: 'finishLoading',
             ERROR: 'error',
             LOAD_DETAILS: 'loadDetails'
-        }
+        };
+        this.status = {
+            0: "On Sale",
+            1: "Wanted",
+            2: "Reserved",
+            3: "Sold"
+        };
     }
 
     subscribe(eventName, eventHandler) {

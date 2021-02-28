@@ -6,12 +6,6 @@ export default class AdsListController extends BaseController {
 
     constructor(element) {
         super(element);
-        this.status = {
-            0: "On Sale",
-            1: "Wanted",
-            2: "Reserved",
-            3: "Sold"
-        };
     }
     
     async loadAds() {

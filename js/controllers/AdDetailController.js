@@ -12,7 +12,7 @@ export default class AdDetailController extends BaseController {
 
     renderDetails(ad) {
         const container = document.createElement('div');
-        container.innerHTML = adDetailView(ad);
+        container.innerHTML = adDetailView(ad, this.status);
         this.element.append(container);
         
         const deleteAdController = this.element.querySelector('.deleteButton');
