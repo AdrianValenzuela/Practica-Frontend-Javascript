@@ -16,16 +16,26 @@ export default class AdDetailController extends BaseController {
         this.element.append(container);
         
         const deleteAdController = this.element.querySelector('.deleteButton');
-        deleteAdController.addEventListener('click', event => {
-            new DeleteAdController(deleteAdController, this.element, ad);
-        });
+
+        if (deleteAdController) {
+            deleteAdController.addEventListener('click', event => {
+                new DeleteAdController(deleteAdController, this.element, ad);
+            });
+        }
+        
     }
 
     async getAdFromUrl(url) {
-        const urlParams = url.replace('?', '');
-        const ulrParamsSplt = urlParams.split('=');
-        const adId = ulrParamsSplt[1];
-        const ad = await AdService.getAd(adId);
-        this.renderDetails(ad);
+        try {
+            this.publish(this.events.START_LOADING);            
+            const urlParams = url.replace('?', '');
+            const ulrParamsSplt = urlParams.split('=');
+            const adId = ulrParamsSplt[1];
+            const ad = await AdService.getAd(adId);
+            this.publish(this.events.EXIST_ADS);
+            this.renderDetails(ad);
+        } catch (error) {
+            this.publish(this.events.NO_ADS);
+        }
     }
 }

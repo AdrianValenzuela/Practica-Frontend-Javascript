@@ -12,9 +12,14 @@ export default class AdsListController extends BaseController {
         try {
             this.publish(this.events.START_LOADING);
             const ads = await adService.getAds();
-            this.render(ads);
+            if (ads.length > 0) {
+                this.render(ads);
+            } else {
+                this.publish(this.events.NO_ADS);
+            }            
         } catch (error) {
             this.publish(this.events.ERROR, error);
+            this.publish(this.events.NO_ADS);
         } finally {
             this.publish(this.events.FINISH_LOADING);
         }

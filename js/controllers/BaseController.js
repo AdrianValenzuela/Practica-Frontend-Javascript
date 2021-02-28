@@ -9,7 +9,9 @@ export default class BaseController {
             START_LOADING: 'startLoading',
             FINISH_LOADING: 'finishLoading',
             ERROR: 'error',
-            LOAD_DETAILS: 'loadDetails'
+            LOAD_DETAILS: 'loadDetails',
+            NO_ADS: 'emptyDB',
+            EXIST_ADS: 'existsAds'
         };
         this.status = {
             0: "On Sale",

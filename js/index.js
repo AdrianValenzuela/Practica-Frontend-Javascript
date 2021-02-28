@@ -3,10 +3,14 @@ import ErrorController from './controllers/ErrorController.js';
 import AdsListController from './controllers/AdsListController.js';
 import NewAdOrLoginController from './controllers/NewAdOrLoginController.js';
 import LogoutController from './controllers/LogOutController.js';
+import NotificationController from './controllers/NotificationController.js';
 
 window.addEventListener('DOMContentLoaded', async event => {
     const loader = document.querySelector('.lds-ring');
     new LoaderController(loader);
+
+    const notification = document.querySelector('.notification');
+    new NotificationController(notification);
 
     const error = document.querySelector('.global-errors');
     new ErrorController(error);

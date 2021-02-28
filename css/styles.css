@@ -21,7 +21,8 @@ body {
   background-color: rgba(255, 255, 255, 0.8); /* Black w/ opacity */
 }
 .lds-ring.hidden,
-.global-errors.hidden {
+.global-errors.hidden,
+.notification.hidden {
   display: none;
 }
 .lds-ring div {
@@ -59,6 +60,17 @@ body {
 /* Global errors */
 .global-errors {
   padding: 20% 10%;
+}
+
+/* no ads */
+.notification {
+  position: fixed;
+  width: 100%;
+  margin-top: 20%;
+}
+
+.notification.hidden {
+  display: none;
 }
 
 /* ads list */

@@ -1,4 +1,4 @@
-export const ConfirmDeleteAdView = `<div class="notification is-warning">
+export const ConfirmDeleteAdView = `<div class="notification is-warning confirmMessage">
                                         <button class="delete"></button>
                                         <p>¿Estás seguro que desea <strong>Eliminar</strong>
                                         el anuncio seleccionado?</p>
