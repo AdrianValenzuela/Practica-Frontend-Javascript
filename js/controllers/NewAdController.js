@@ -54,6 +54,12 @@ export default class NewAdController extends BaseController {
                 ad.photo = this.element.elements.file.files[0];
             }
 
+            if (!this.element.elements.tags.value.includes(',')) {
+                ad.tags = [this.element.elements.tags.value];
+            } else {
+                ad.tags = this.element.elements.tags.value.split(',');
+            }
+
             this.publish(this.events.START_LOADING);
             try {
                 await adService.saveAd(ad);
