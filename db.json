@@ -1,0 +1,169 @@
+{
+  "ads": [
+    {
+      "ad": "Laptop",
+      "price": 899.99,
+      "photo": "https://www.allianceplast.com/wp-content/uploads/2017/11/no-image.png",
+      "status": 0,
+      "tags": [
+        "mobile"
+      ],
+      "userId": 1,
+      "createdAt": "2021-02-22T19:28:07.206Z",
+      "id": 1
+    },
+    {
+      "ad": "Car",
+      "price": 15000,
+      "photo": "https://www.allianceplast.com/wp-content/uploads/2017/11/no-image.png",
+      "status": 1,
+      "tags": [
+        "motor",
+        "lifestyle"
+      ],
+      "userId": 2,
+      "createdAt": "2021-02-22T19:28:07.206Z",
+      "id": 2
+    },
+    {
+      "ad": "Motorbike",
+      "price": 1250,
+      "photo": "https://www.allianceplast.com/wp-content/uploads/2017/11/no-image.png",
+      "status": 2,
+      "tags": [
+        "motor",
+        "lifestyle"
+      ],
+      "userId": 3,
+      "createdAt": "2021-02-22T19:28:07.206Z",
+      "id": 3
+    },
+    {
+      "ad": "Phone",
+      "price": 300,
+      "photo": "https://www.allianceplast.com/wp-content/uploads/2017/11/no-image.png",
+      "status": 3,
+      "tags": [
+        "mobile"
+      ],
+      "userId": 4,
+      "createdAt": "2021-02-22T19:28:07.206Z",
+      "id": 4
+    },
+    {
+      "ad": "Keyboard",
+      "price": 50,
+      "photo": "https://www.allianceplast.com/wp-content/uploads/2017/11/no-image.png",
+      "status": 2,
+      "tags": [
+        "tech"
+      ],
+      "userId": 5,
+      "createdAt": "2021-02-22T19:28:07.206Z",
+      "id": 5
+    },
+    {
+      "ad": "Mouse",
+      "price": 20,
+      "photo": "https://www.allianceplast.com/wp-content/uploads/2017/11/no-image.png",
+      "status": 1,
+      "tags": [
+        "tech"
+      ],
+      "userId": 2,
+      "createdAt": "2021-02-22T19:28:07.206Z",
+      "id": 6
+    },
+    {
+      "ad": "Bike",
+      "price": 200,
+      "photo": "https://www.allianceplast.com/wp-content/uploads/2017/11/no-image.png",
+      "status": 3,
+      "tags": [
+        "lifestyle"
+      ],
+      "userId": 1,
+      "createdAt": "2021-02-22T19:28:07.206Z",
+      "id": 7
+    },
+    {
+      "ad": "Book",
+      "price": 15,
+      "photo": "https://www.allianceplast.com/wp-content/uploads/2017/11/no-image.png",
+      "status": 0,
+      "tags": [
+        "lifestyle"
+      ],
+      "userId": 4,
+      "createdAt": "2021-02-22T19:28:07.206Z",
+      "id": 8
+    },
+    {
+      "ad": "nintendo switch",
+      "price": "200.00",
+      "status": 1,
+      "tags": [
+        "tech"
+      ],
+      "photo": "https://www.allianceplast.com/wp-content/uploads/2017/11/no-image.png",
+      "userId": 15,
+      "updatedAt": "2021-02-22T19:23:42.043Z",
+      "id": 9
+    },
+    {
+      "ad": "play 4",
+      "price": "500",
+      "status": 0,
+      "tags": [
+        "tech"
+      ],
+      "photo": "https://www.allianceplast.com/wp-content/uploads/2017/11/no-image.png",
+      "createdAt": "22/2/2021 20:28:07",
+      "userId": 15,
+      "updatedAt": "2021-02-22T19:28:07.206Z",
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "luke@starwars.com",
+      "password": "$2b$10$KxqTnqj.uqyuXCNzKnJBse2TK/5GyaZLluzR6AZETLcHN6D/uAarm"
+    },
+    {
+      "id": 2,
+      "username": "anakin@starwars.com",
+      "password": "$2b$10$KxqTnqj.uqyuXCNzKnJBse2TK/5GyaZLluzR6AZETLcHN6D/uAarm"
+    },
+    {
+      "id": 3,
+      "username": "leia@starwars.com",
+      "password": "$2b$10$KxqTnqj.uqyuXCNzKnJBse2TK/5GyaZLluzR6AZETLcHN6D/uAarm"
+    },
+    {
+      "id": 4,
+      "username": "chewe@starwars.com",
+      "password": "$2b$10$KxqTnqj.uqyuXCNzKnJBse2TK/5GyaZLluzR6AZETLcHN6D/uAarm"
+    },
+    {
+      "id": 5,
+      "username": "han@starwars.com",
+      "password": "$2b$10$KxqTnqj.uqyuXCNzKnJBse2TK/5GyaZLluzR6AZETLcHN6D/uAarm"
+    },
+    {
+      "username": "adri@adri.com",
+      "password": "$2b$10$dNe.evag.NEFPan3TQZ9G.6sreYCtgHtrcyhLgbOS9tHG57PmzKIm",
+      "id": 15
+    },
+    {
+      "username": "nuevo@nuevo.com",
+      "password": "$2b$10$a3.gXxfQcdLJhp0a/Fd2YuL/ChbgkLCMQBAmsHBfRiC/1MsfBzyEi",
+      "id": 16
+    },
+    {
+      "username": "usuario@usuario.com",
+      "password": "$2b$10$Fq3FS7bdAiqT9KmJjRfQ8eqok1vI59v7WpMaMYD6SrnPqUV/08kpC",
+      "id": 17
+    }
+  ]
+}
