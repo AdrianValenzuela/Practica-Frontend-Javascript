@@ -1,4 +1,4 @@
-import userService from "../services/userService.js";
+import userService from "../services/UserService.js";
 import BaseController from "./BaseController.js";
 
 export default class NewAdOrLoginController extends BaseController {
