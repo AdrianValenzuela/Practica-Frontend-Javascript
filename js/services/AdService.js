@@ -4,10 +4,10 @@ const BASE_URL = 'http://127.0.0.1:8000';
 function parseCustomAd(ad, currentUser) {
     return {
         id: ad.id,
-        ad: ad.ad,
+        ad: ad.ad.replace(/(<([^>]+)>)/gi, ""),
         price: ad.price,
         status: ad.status,
-        tags: ad.tags,
+        tags: ad.tags.map(tag => { return tag.replace(/(<([^>]+)>)/gi, "") }),
         photo: ad.photo,
         createdAt: ad.createdAt,
         canBeUpdatedOrDeleted: currentUser ? currentUser.userId === ad.userId : false
